@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
+  --primary-collor: hsl(246, 50%, 50%);
+  --body-collor: hsl(0, 0%, 91%);
+  --yellow-star: #ffbb3a;
+  --gray-text: hsl(0, 0%, 40%);
+  --gray-light-text:hsl(0,0%,60%);
+  font-size: 62.5%;
+}
+
+/*General************************************************************/
+
+* {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--body-collor);
+}
+
+header{
+  background-color: var(--primary-collor);
+  color: white;
+  height: 6rem;
+  
+  display: flex;
+  align-items: center;
+}
+a, a:hover{
+  color: unset;
+  text-decoration: none;
+}
+
+.button,.button:hover{
+  width: 50%;
+  height: 4rem;
+  background-color: var(--primary-collor);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .4rem;
+  border: none;
+}
+
+
+/*Navigation******************************/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1{
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+nav a{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+nav .nav-content{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*Pagination******************************************/
+.pagination-container{
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-box{
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-box p{
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--primary-collor);
+}
+
+.pagination-box button{
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--primary-collor);
+  border-radius: .4rem;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-box button:disabled{
+  border: 1px solid var(--gray-text);
+}
+
+/*Cards**************************************************/
+
+#cards-list{
+  padding: 0 1rem;
+}
+
+section .card{
+  width: 100%;
+  border-radius: .8rem;
+}
+
+.card img{
+  width: 100%;
+  border-radius: .8rem .8rem 0 0;
+  
+}
+
+.description{
+  background-color: white;
+  padding: 1rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--gray-text);
+  border-radius: 0 0 .8rem .8rem;
+  height: 20rem;
+  justify-content: space-between;
+
+}
+
+.description h3{
+  margin-bottom: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.ds-card-description-botton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.ds-card-description-botton h4{
+  color: var(--yellow-star);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.ds-card-description-botton img{
+  width: 2.2rem;
+}
+
+.ds-card-description-botton p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--gray-light-text);
+  margin-bottom: 1rem;
+}
+/*Formulário*************************************************/
+
+/*Form Container************************/
+.form-container{
+  padding: 4rem 0;
+  max-width: 48rem;
+}
+
+.form-description{
+
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 .8rem .8rem;
+}
+
+.form{
+  width: 100%;
+}
+
+.form-button-container{
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ds-form-group{
+  margin-bottom: 2rem;
+
+}
+
+label{
+  font-size: 1.2rem;
+  color: var(--gray-light-text);
+}
+
+main section h3{
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
